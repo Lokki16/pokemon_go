@@ -1,5 +1,6 @@
-import 'package:pokemon_go/presentation/template/template.dart';
+part of 'pokemon_bloc.dart';
 
+@immutable
 abstract class PokemonState {}
 
 class PokemonInitial extends PokemonState {}
@@ -7,9 +8,9 @@ class PokemonInitial extends PokemonState {}
 class PokemonLoadInProgress extends PokemonState {}
 
 class PokemonPageLoadSuccess extends PokemonState {
-  final List<PokemonListing> pokemonListings;
+  final List<PokemonPageRes> listOfPokemon;
 
-  PokemonPageLoadSuccess({required this.pokemonListings});
+  PokemonPageLoadSuccess({required this.listOfPokemon});
 }
 
 class PokemonPageLoadFailed extends PokemonState {

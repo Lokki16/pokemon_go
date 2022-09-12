@@ -126,196 +126,196 @@ class _PokemonPageState extends State<PokemonPage> {
                         ),
                         const PokemonTypeLabel(text: 'Wild'),
                         SizedBox(height: 20.h),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            ButtonWithIcon(
-                              name: state
-                                  .pokemonListings[pokePages.pokemonWildList[0]]
-                                  .name,
-                              icon: state
-                                  .pokemonListings[pokePages.pokemonWildList[0]]
-                                  .imageUrl,
-                              onTap: () {
-                                Navigator.of(context).pushNamed(
-                                  AppRoutes.routeToPokemonDetailsView,
-                                  arguments: state
-                                      .pokemonListings[
-                                          pokePages.pokemonWildList[0]]
-                                      .id,
-                                );
-                              },
-                            ),
-                            ButtonWithIcon(
-                              name: state
-                                  .pokemonListings[pokePages.pokemonWildList[1]]
-                                  .name,
-                              icon: state
-                                  .pokemonListings[pokePages.pokemonWildList[1]]
-                                  .imageUrl,
-                              onTap: () {
-                                Navigator.of(context).pushNamed(
-                                  AppRoutes.routeToPokemonDetailsView,
-                                  arguments: state
-                                      .pokemonListings[
-                                          pokePages.pokemonWildList[1]]
-                                      .id,
-                                );
-                              },
-                            ),
-                            ButtonWithIcon(
-                              name: state
-                                  .pokemonListings[pokePages.pokemonWildList[2]]
-                                  .name,
-                              icon: state
-                                  .pokemonListings[pokePages.pokemonWildList[2]]
-                                  .imageUrl,
-                              onTap: () {
-                                Navigator.of(context).pushNamed(
-                                  AppRoutes.routeToPokemonDetailsView,
-                                  arguments: state
-                                      .pokemonListings[
-                                          pokePages.pokemonWildList[2]]
-                                      .id,
-                                );
-                              },
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 40.h),
-                        const PokemonTypeLabel(
-                          text: 'Incense',
-                          image: 'assets/images/image11.png',
-                        ),
-                        Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[0]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[0]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[0]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[1]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[1]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[1]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[2]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[2]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[2]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 15.h),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[3]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[3]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[3]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[4]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[4]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[4]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                                ButtonWithIcon(
-                                  name: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[5]]
-                                      .name,
-                                  icon: state
-                                      .pokemonListings[
-                                          pokePages.pokemonIncenseList[5]]
-                                      .imageUrl,
-                                  onTap: () {
-                                    Navigator.of(context).pushNamed(
-                                      AppRoutes.routeToPokemonDetailsView,
-                                      arguments: state
-                                          .pokemonListings[
-                                              pokePages.pokemonIncenseList[5]]
-                                          .id,
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        //   children: [
+                        //     ButtonWithIcon(
+                        //       name: state
+                        //           .pokemonListings[pokePages.pokemonWildList[0]]
+                        //           .name,
+                        //       icon: state
+                        //           .pokemonListings[pokePages.pokemonWildList[0]]
+                        //           .imageUrl,
+                        //       onTap: () {
+                        //         Navigator.of(context).pushNamed(
+                        //           AppRoutes.routeToPokemonDetailsView,
+                        //           arguments: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonWildList[0]]
+                        //               .id,
+                        //         );
+                        //       },
+                        //     ),
+                        //     ButtonWithIcon(
+                        //       name: state
+                        //           .pokemonListings[pokePages.pokemonWildList[1]]
+                        //           .name,
+                        //       icon: state
+                        //           .pokemonListings[pokePages.pokemonWildList[1]]
+                        //           .imageUrl,
+                        //       onTap: () {
+                        //         Navigator.of(context).pushNamed(
+                        //           AppRoutes.routeToPokemonDetailsView,
+                        //           arguments: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonWildList[1]]
+                        //               .id,
+                        //         );
+                        //       },
+                        //     ),
+                        //     ButtonWithIcon(
+                        //       name: state
+                        //           .pokemonListings[pokePages.pokemonWildList[2]]
+                        //           .name,
+                        //       icon: state
+                        //           .pokemonListings[pokePages.pokemonWildList[2]]
+                        //           .imageUrl,
+                        //       onTap: () {
+                        //         Navigator.of(context).pushNamed(
+                        //           AppRoutes.routeToPokemonDetailsView,
+                        //           arguments: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonWildList[2]]
+                        //               .id,
+                        //         );
+                        //       },
+                        //     ),
+                        //   ],
+                        // ),
+                        // SizedBox(height: 40.h),
+                        // const PokemonTypeLabel(
+                        //   text: 'Incense',
+                        //   image: 'assets/images/image11.png',
+                        // ),
+                        // Column(
+                        //   children: [
+                        //     Row(
+                        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        //       children: [
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[0]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[0]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[0]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[1]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[1]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[1]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[2]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[2]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[2]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //       ],
+                        //     ),
+                        //     SizedBox(height: 15.h),
+                        //     Row(
+                        //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        //       children: [
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[3]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[3]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[3]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[4]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[4]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[4]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //         ButtonWithIcon(
+                        //           name: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[5]]
+                        //               .name,
+                        //           icon: state
+                        //               .pokemonListings[
+                        //                   pokePages.pokemonIncenseList[5]]
+                        //               .imageUrl,
+                        //           onTap: () {
+                        //             Navigator.of(context).pushNamed(
+                        //               AppRoutes.routeToPokemonDetailsView,
+                        //               arguments: state
+                        //                   .pokemonListings[
+                        //                       pokePages.pokemonIncenseList[5]]
+                        //                   .id,
+                        //             );
+                        //           },
+                        //         ),
+                        //       ],
+                        //     ),
+                        //   ],
+                        // ),
                         SizedBox(height: 20.h),
                         const BottomBar(),
                       ],

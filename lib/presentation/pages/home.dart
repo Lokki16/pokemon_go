@@ -10,9 +10,7 @@ class Home extends StatelessWidget {
         body: BlocBuilder<PokemonBloc, PokemonState>(
           builder: (context, state) {
             if (state is PokemonLoadInProgress) {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
+              return const Center(child: CircularProgressIndicator());
             }
             if (state is PokemonPageLoadSuccess) {
               return SingleChildScrollView(
@@ -81,18 +79,18 @@ class Home extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               ButtonWithIcon(
-                                name: state.pokemonListings[174].name,
-                                icon: state.pokemonListings[174].imageUrl,
+                                name: state.listOfPokemon[174].name,
+                                icon: state.listOfPokemon[174].image,
                                 onTap: () {},
                               ),
                               ButtonWithIcon(
-                                name: state.pokemonListings[433].name,
-                                icon: state.pokemonListings[433].imageUrl,
+                                name: state.listOfPokemon[433].name,
+                                icon: state.listOfPokemon[433].image,
                                 onTap: () {},
                               ),
                               ButtonWithIcon(
-                                name: state.pokemonListings[531].name,
-                                icon: state.pokemonListings[531].imageUrl,
+                                name: state.listOfPokemon[531].name,
+                                icon: state.listOfPokemon[531].image,
                                 onTap: () {},
                               ),
                             ],
@@ -107,11 +105,9 @@ class Home extends StatelessWidget {
               );
             }
             if (state is PokemonPageLoadFailed) {
-              return Center(
-                child: Text(state.error.toString()),
-              );
+              return Center(child: Text(state.error.toString()));
             }
-            return Container();
+            return const Center(child: Text('smth'));
           },
         ),
       ),

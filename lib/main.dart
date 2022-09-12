@@ -10,10 +10,14 @@ class PokemonGo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => PokemonBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => PokemonBloc(),
+        ),
+      ],
       child: ScreenUtilInit(
-        builder: (_) => MaterialApp(
+        builder: (context, widget) => MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'PokemonGO',
           initialRoute: AppRoutes.routeToHome,
