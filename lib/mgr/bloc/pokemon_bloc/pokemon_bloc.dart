@@ -4,13 +4,16 @@ part 'pokemon_event.dart';
 part 'pokemon_state.dart';
 
 class PokemonBloc extends Bloc<PokemonEvent, PokemonState> {
+  final ApiRequest _apiRequest = ApiRequest();
+
   PokemonBloc() : super(PokemonInitial()) {
     on<PokemonEvent>((event, emit) async {
       emit(PokemonLoadInProgress());
 
       try {
-        final pokemonPageResponse = await ApiRequest().getPokemonPage();
-        emit(PokemonPageLoadSuccess(listOfPokemon: pokemonPageResponse.list));
+        final PokemonPageListRes _allPokemonRes =
+            await _apiRequest.getAllPokemon();
+        emit(PokemonPageLoadSuccess(listOfPokemon: _allPokemonRes));
       } catch (e) {
         emit(PokemonPageLoadFailed(error: e));
       }

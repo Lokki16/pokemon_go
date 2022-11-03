@@ -5,7 +5,7 @@ part 'pokemon_page_list_res.g.dart';
 
 @JsonSerializable(anyMap: true)
 class PokemonPageListRes {
-  final List<PokemonPageRes> list;
+  final PokemonPageListRes list;
 
   @override
   const PokemonPageListRes({required this.list});

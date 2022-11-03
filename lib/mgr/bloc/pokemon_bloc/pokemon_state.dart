@@ -8,7 +8,7 @@ class PokemonInitial extends PokemonState {}
 class PokemonLoadInProgress extends PokemonState {}
 
 class PokemonPageLoadSuccess extends PokemonState {
-  final List<PokemonPageRes> listOfPokemon;
+  final PokemonPageListRes listOfPokemon;
 
   PokemonPageLoadSuccess({required this.listOfPokemon});
 }

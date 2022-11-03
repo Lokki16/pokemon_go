@@ -7,9 +7,7 @@ part of 'pokemon_page_list_res.dart';
 // **************************************************************************
 
 PokemonPageListRes _$PokemonPageListResFromJson(Map json) => PokemonPageListRes(
-      list: (json['list'] as List<dynamic>)
-          .map((e) => PokemonPageRes.fromJson(e as Map))
-          .toList(),
+      list: PokemonPageListRes.fromJson(json['list'] as Map),
     );
 
 Map<String, dynamic> _$PokemonPageListResToJson(PokemonPageListRes instance) =>

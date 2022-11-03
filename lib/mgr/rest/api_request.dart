@@ -8,10 +8,10 @@ class ApiRequest {
 
   final baseUrl = 'pokeapi.co';
 
-  Future<PokemonPageListRes> getPokemonPage() async {
+  Future<PokemonPageListRes> getAllPokemon() async {
     final uri = Uri.https(baseUrl, '/api/v2/pokemon', {'limit': '1154'});
 
-    final response = await client.get(uri);
+    final response = await http.get(uri);
     final json = jsonDecode(response.body);
 
     return PokemonPageListRes.fromJson(json);
@@ -21,7 +21,7 @@ class ApiRequest {
     final uri = Uri.https(baseUrl, '/api/v2/pokemon/$pokemonId');
 
     try {
-      final response = await client.get(uri);
+      final response = await http.get(uri);
       final json = jsonDecode(response.body);
 
       return PokemonInfoRes.fromJson(json);
@@ -34,7 +34,7 @@ class ApiRequest {
     final uri = Uri.https(baseUrl, '/api/v2/pokemon-species/$pokemonId');
 
     try {
-      final response = await client.get(uri);
+      final response = await http.get(uri);
       final json = jsonDecode(response.body);
 
       return PokemonSpeciesRes.fromJson(json);

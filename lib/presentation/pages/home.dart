@@ -78,21 +78,21 @@ class Home extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              ButtonWithIcon(
-                                name: state.listOfPokemon[174].name,
-                                icon: state.listOfPokemon[174].image,
-                                onTap: () {},
-                              ),
-                              ButtonWithIcon(
-                                name: state.listOfPokemon[433].name,
-                                icon: state.listOfPokemon[433].image,
-                                onTap: () {},
-                              ),
-                              ButtonWithIcon(
-                                name: state.listOfPokemon[531].name,
-                                icon: state.listOfPokemon[531].image,
-                                onTap: () {},
-                              ),
+                              // ButtonWithIcon(
+                              //   name: state.listOfPokemon[174].name,
+                              //   icon: state.listOfPokemon[174].image,
+                              //   onTap: () {},
+                              // ),
+                              // ButtonWithIcon(
+                              //   name: state.listOfPokemon[433].name,
+                              //   icon: state.listOfPokemon[433].image,
+                              //   onTap: () {},
+                              // ),
+                              // ButtonWithIcon(
+                              //   name: state.listOfPokemon[531].name,
+                              //   icon: state.listOfPokemon[531].image,
+                              //   onTap: () {},
+                              // ),
                             ],
                           ),
                           SizedBox(height: 20.h),
@@ -107,7 +107,7 @@ class Home extends StatelessWidget {
             if (state is PokemonPageLoadFailed) {
               return Center(child: Text(state.error.toString()));
             }
-            return const Center(child: Text('smth'));
+            return const SizedBox.shrink();
           },
         ),
       ),
